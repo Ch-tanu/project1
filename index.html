@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="number"], input[type="date"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Application Form</h1>
+    <form>
+        <p>Note: Form is to be completed at least 21 days prior to date</p>
+        
+        <h2>Personal Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter name here" required>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="Enter address here" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email here" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter 10 digit number" pattern="[0-9]{10}" required>
+        
+        <label for="iq">IQ:</label>
+        <input type="number" id="iq" name="iq" placeholder="Enter IQ here">
+        
+        <h3>Gender</h3>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+        
+        <label for="date">Date of Proposed Outing:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <h3>Check All That Apply</h3>
+        <label><input type="checkbox" name="tattoos"> I have tattoos and/or piercings</label>
+        <label><input type="checkbox" name="age"> I am more than 2 years older than my daughter</label>
+        <label><input type="checkbox" name="vehicle"> I own a panel van or V8 ute</label>
+        <label><input type="checkbox" name="fulltime"> I work full-time</label>
+        <label><input type="checkbox" name="rich_parents"> My parents are rich</label>
+        
+        <label><input type="checkbox" name="public_location"> Is the date at a well-lit public location</label>
+        
+        <label for="political">Political Persuasion:</label>
+        <input type="text" id="political" name="political" value="Left Wing">
+        
+        <label for="education">Education Level Completed:</label>
+        <input type="text" id="education" name="education" value="University">
+        
+        <h3>Essay Section</h3>
